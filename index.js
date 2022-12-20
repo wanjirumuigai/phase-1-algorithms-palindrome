@@ -1,9 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let arrayWord = word.split('')
+  let reverseWord = arrayWord.reverse().join('')
+  if (word === reverseWord) {
+    return true
+  }
+  else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+declare a string variable
+  convert the string to array using the split() method
+  using reverse() to reverse the order of the array
+  do a comparison of the two arrays
 */
 
 /*
